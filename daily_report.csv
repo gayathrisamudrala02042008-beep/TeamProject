@@ -1,0 +1,17 @@
+Date,MemberID,MemberName,Role,BorrowID,ISBN,Quantity,IssueDate,ReturnDate,Fine,ReservationDate,Action
+16-03-2026,101,Gayathri,Student,,,,,,,,NEW_MEMBER
+16-03-2026,102,Mousika,Faculty,,,,,,,,NEW_MEMBER
+16-03-2026,103,Meghaswana,Faculty,,,,,,,,NEW_MEMBER
+16-03-2026,104,Gnana,Student,,,,,,,,NEW_MEMBER
+16-03-2026,189,santosh,Student,,,,,,,,NEW_MEMBER
+16-03-2026,111,ujwala,Student,,,,,,,,NEW_MEMBER
+16-03-2026,101,Gayathri,Student,1,123n,2,16-03-2026,,0,,BORROW
+16-03-2026,103,Meghaswana,Faculty,2,160m,2,16-03-2026,,0,,BORROW
+16-03-2026,104,Gnana,Student,3,123n,1,16-03-2026,,0,,BORROW
+16-03-2026,111,ujwala,Student,4,190t,2,16-03-2026,,0,,BORROW
+16-03-2026,111,ujwala,Student,5,123n,1,16-03-2026,,0,,BORROW
+16-03-2026,189,santosh,Student,6,156p,1,16-03-2026,,0,,BORROW
+16-03-2026,102,Mousika,Faculty,7,156p,1,16-03-2026,,0,,BORROW
+16-03-2026,189,santosh,Student,6,156p,1,16-03-2026,16-03-2026,0,,RETURN
+16-03-2026,101,Gayathri,Student,,156p,,,,,16-03-2026,RESERVE
+16-03-2026,102,Mousika,Faculty,,156p,,,,,16-03-2026,RESERVE
