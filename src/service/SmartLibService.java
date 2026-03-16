@@ -904,6 +904,18 @@ public class SmartLibService {
 
         // Return increases availability, but reservations may consume immediately
         book.setAvailableCopies(book.getAvailableCopies() + quantityReturning);
+        // Increase available copies
+        book.setAvailableCopies(book.getAvailableCopies() + quantityReturning);
+        
+        // Get rack number where book belongs
+        int rackNo = isbnToRack.getOrDefault(book.getIsbn(), -1);
+        
+        // Message to staff about where to place the book
+        System.out.println("\n===== STAFF NOTICE =====");
+        System.out.println("Returned book should be placed in Rack Number: " + rackNo);
+        System.out.println("Book Title: " + book.getTitle());
+        System.out.println("Available Copies Updated: " + book.getAvailableCopies());
+        System.out.println("========================");
 
         // Reservation handling: auto-issue from available copies (if any)
         handleReservationOnReturn(book.getIsbn(), returnDate);
