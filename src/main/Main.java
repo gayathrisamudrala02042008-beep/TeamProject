@@ -30,12 +30,12 @@ public class Main {
                     System.out.println("6. View Pending Requests");
                     System.out.println("7. View All Requests");
                     System.out.println("8. Process Request (Approve/Reject)");
-                    System.out.println("9. Generate Daily Report");
+                    System.out.println("9. View Racks");
                     System.out.println("10. Show Due Tomorrow Notifications");
                     System.out.println("11. Top K Borrowed Books");
                     System.out.println("12. Most Active Members");
                     System.out.println("13. Undo Last Approved Action");
-                    System.out.println("14. View Racks");
+                    System.out.println("14.  Generate Daily Report");
 
                     int choice = InputUtil.readInt("Enter your choice: ");
                     switch (choice) {
@@ -48,12 +48,12 @@ public class Main {
                         case 6 -> service.viewPendingRequests();
                         case 7 -> service.viewAllRequests();
                         case 8 -> service.processRequest();
-                        case 9 -> service.generateDailyReport();
+                        case 9 -> service.viewRacks();
                         case 10 -> service.showDueTomorrowNotifications();
                         case 11 -> service.showTopKBorrowedBooks();
                         case 12 -> service.showMostActiveMembers();
                         case 13 -> service.undoLastAction();
-                        case 14 -> service.viewRacks();
+                        case 14 -> service.generateDailyReport();
                         default -> System.out.println("Invalid choice.");
                     }
                 } else {
